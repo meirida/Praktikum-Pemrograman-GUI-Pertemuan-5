@@ -5,7 +5,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 
 
-class FormKamu(QWidget):
+class Latihan3(QWidget):
     def __init__(self):
         super().__init__()
         self.setupUi()
@@ -66,6 +66,6 @@ class FormKamu(QWidget):
 if __name__ == '__main__':
     a = QApplication(sys.argv)
 
-    form = FormKamu()
+    form = Latihan3()
     form.show()
     a.exec_()
