@@ -4,7 +4,7 @@ from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 
-class MainForm(QWidget):
+class Latihan6(QWidget):
     def __init__(self):
         super().__init__()
         self.setupUi()
@@ -52,7 +52,7 @@ class MainForm(QWidget):
 if __name__ == '__main__':
     a = QApplication(sys.argv)
 
-    form = MainForm()
+    form = Latihan6()
     form.show()
 
     a.exec_()
