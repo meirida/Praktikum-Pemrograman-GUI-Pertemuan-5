@@ -5,7 +5,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 
 
-class ShowImage(QWidget):
+class Latihan1(QWidget):
     def __init__(self):
         super().__init__()
         self.setupUi()
@@ -37,7 +37,7 @@ class ShowImage(QWidget):
 
 if __name__ == '__main__':
     a = QApplication(sys.argv)
-    form = ShowImage()
+    form = Latihan1()
     form.show()
 
     a.exec_()
