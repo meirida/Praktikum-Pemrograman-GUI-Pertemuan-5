@@ -5,7 +5,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 
 
-class IconButon(QWidget):
+class Latihan2(QWidget):
     def __init__(self):
         super().__init__()
         self.setupUi()
@@ -50,6 +50,6 @@ class IconButon(QWidget):
 if __name__ == '__main__':
     a = QApplication(sys.argv)
 
-    form = IconButon()
+    form = Latihan2()
     form.show()
     a.exec_()
