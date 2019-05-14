@@ -5,7 +5,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 
 
-class FormHitung(QWidget):
+class Latihan4(QWidget):
     def __init__(self):
         super().__init__()
         self.setupUi()
@@ -17,8 +17,8 @@ class FormHitung(QWidget):
 
         self.label1 = QLabel()
         self.label1.setText('Bilangan pertama')
-        self.bilPetama = QLineEdit()
-        self.bilPetama.setValidator(QIntValidator())
+        self.bilPertama = QLineEdit()
+        self.bilPertama.setValidator(QIntValidator())
 
 
         self.label2 = QLabel()
@@ -28,7 +28,7 @@ class FormHitung(QWidget):
 
         mGlyout = QGridLayout()
         mGlyout.addWidget(self.label1,0,0)
-        mGlyout.addWidget(self.bilPetama,0,1)
+        mGlyout.addWidget(self.bilPertama,0,1)
         mGlyout.addWidget(self.label2,1,0)
         mGlyout.addWidget(self.bilKedua,1,1)
 
@@ -63,7 +63,7 @@ class FormHitung(QWidget):
         self.checkButton.clicked.connect(self.checkButtonClick)
 
     def checkButtonClick(self):
-        one = float(self.bilPetama.text())
+        one = float(self.bilPertama.text())
         two = float(self.bilKedua.text())
         if self.cekTambah.isChecked():
             res = one+two
@@ -82,6 +82,6 @@ class FormHitung(QWidget):
 if __name__ == '__main__':
     a = QApplication(sys.argv)
 
-    form = FormHitung()
+    form = Latihan4()
     form.show()
     a.exec_()
